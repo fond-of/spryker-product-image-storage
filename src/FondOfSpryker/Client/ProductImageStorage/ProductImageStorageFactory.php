@@ -12,8 +12,6 @@ class ProductImageStorageFactory extends SprykerProductImageStorageFactory
      */
     public function createProductViewImageExpander()
     {
-        dump(__METHOD__);
-
         return new ProductViewImageExpander(
             $this->createProductAbstractImageStorageReader(),
             $this->createProductConcreteImageStorageReader()
