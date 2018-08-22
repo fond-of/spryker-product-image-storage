@@ -13,4 +13,6 @@ interface ProductImageStorageConstants
     const DEFAULT_IMAGE_SET_NAME = ProductImageConfig::DEFAULT_IMAGE_SET_NAME;
 
     const IMAGE_SET_ADDITIONAL = 'AdditionalImage';
+
+    const IMAGE_SET_THUMBNAIL = 'Thumbnail';
 }
