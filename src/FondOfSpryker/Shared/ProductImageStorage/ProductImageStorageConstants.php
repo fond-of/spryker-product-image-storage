@@ -15,4 +15,8 @@ interface ProductImageStorageConstants
     const IMAGE_SET_ADDITIONAL = 'AdditionalImage';
 
     const IMAGE_SET_THUMBNAIL = 'Thumbnail';
+
+    const IMAGE_SET_BASEIMAGE = 'BaseImage';
+
+    const IMAGE_SET_HOVERIMAGE = 'HoverImage';
 }
