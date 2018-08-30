@@ -2,7 +2,6 @@
 
 namespace FondOfSpryker\Client\ProductImageStorage\Plugin;
 
-use FondOfSpryker\Shared\ProductImageStorage\ProductImageStorageConfig;
 use Generated\Shared\Transfer\ProductViewTransfer;
 use Spryker\Client\ProductImageStorage\Plugin\ProductViewImageExpanderPlugin as SprykerProductViewImageExpanderPlugin;
 

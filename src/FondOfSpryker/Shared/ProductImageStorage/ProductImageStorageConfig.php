@@ -3,13 +3,12 @@
 namespace FondOfSpryker\Shared\ProductImageStorage;
 
 use Spryker\Shared\ProductImageStorage\ProductImageStorageConfig as SprykerProductImageStorageConfig;
-use FondOfSpryker\Shared\ProductImageStorage\ProductImageStorageConstants;
 
 class ProductImageStorageConfig extends SprykerProductImageStorageConfig
 {
     const DEFAULT_IMAGE_SETS = [
         ProductImageStorageConstants::IMAGE_SET_ADDITIONAL,
-        ProductImageStorageConstants::IMAGE_SET_THUMBNAIL
+        ProductImageStorageConstants::IMAGE_SET_THUMBNAIL,
     ];
 
     public function allwaysDefaultImageSet(): bool

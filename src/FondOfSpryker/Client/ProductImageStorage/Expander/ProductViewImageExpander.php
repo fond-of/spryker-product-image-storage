@@ -28,28 +28,28 @@ class ProductViewImageExpander extends SprykerProductViewImageExpander implement
     }
 
     /**
-     * @param \Generated\Shared\Transfer\ProductViewTransfer $productViewTransfer
+     * @param \Generated\Shared\Transfer\ProductViewTransfer $productViewTransfercd do
      * @param $locale
      * @param array $imageSetNamesArray
      * @param \FondOfSpryker\Shared\ProductImageStorage\ProductImageStorageConfig $config
+     *
      * @return \Generated\Shared\Transfer\ProductViewTransfer
      */
     public function expandProductViewImageDataByArray(
         ProductViewTransfer $productViewTransfer,
         $locale,
-        ProductImageStorageConfig $config): ProductViewTransfer
-    {
+        ProductImageStorageConfig $config
+    ): ProductViewTransfer {
         $imageSetNamesArray = $config->getImageSets();
         $images = [];
 
-        if (
-            $config->allwaysDefaultImageSet() === true &&
+        if ($config->allwaysDefaultImageSet() === true &&
             !in_array(ProductImageStorageConfig::DEFAULT_IMAGE_SET_NAME, $imageSetNamesArray)
         ) {
             array_push($imageSetNamesArray, ProductImageStorageConstants::DEFAULT_IMAGE_SET_NAME);
         }
 
-        foreach($imageSetNamesArray as $imageSetName) {
+        foreach ($imageSetNamesArray as $imageSetName) {
             $images[strtoupper($imageSetName)] = $this->getImages($productViewTransfer, $locale, $imageSetName);
         }
 

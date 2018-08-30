@@ -2,7 +2,6 @@
 
 namespace FondOfSpryker\Client\ProductImageStorage\Expander;
 
-
 use Generated\Shared\Transfer\ProductViewTransfer;
 
 interface ProductViewImageExpanderInterface
