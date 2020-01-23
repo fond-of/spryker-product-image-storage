@@ -16,7 +16,7 @@ class ProductImageStorageFactory extends SprykerProductImageStorageFactory
     {
         return new ProductViewImageExpander(
             $this->createProductAbstractImageStorageReader(),
-            $this->createProductConcreteImageStorageReader()
+            $this->createProductConcreteImageInheritanceResolver()
         );
     }
 
