@@ -6,7 +6,7 @@ use Spryker\Shared\ProductImageStorage\ProductImageStorageConfig as SprykerProdu
 
 class ProductImageStorageConfig extends SprykerProductImageStorageConfig
 {
-    const DEFAULT_IMAGE_SETS = [
+    public const DEFAULT_IMAGE_SETS = [
         ProductImageStorageConstants::IMAGE_SET_ADDITIONAL,
         ProductImageStorageConstants::IMAGE_SET_THUMBNAIL,
         ProductImageStorageConstants::IMAGE_SET_BASEIMAGE,
