@@ -11,6 +11,7 @@ class ProductImageStorageConfig extends SprykerProductImageStorageConfig
         ProductImageStorageConstants::IMAGE_SET_THUMBNAIL,
         ProductImageStorageConstants::IMAGE_SET_BASEIMAGE,
         ProductImageStorageConstants::IMAGE_SET_HOVERIMAGE,
+        ProductImageStorageConstants::IMAGE_SET_SETIMAGE,
     ];
 
     public function allwaysDefaultImageSet(): bool
