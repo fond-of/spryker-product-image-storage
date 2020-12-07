@@ -19,4 +19,6 @@ interface ProductImageStorageConstants
     public const IMAGE_SET_BASEIMAGE = 'BaseImage';
 
     public const IMAGE_SET_HOVERIMAGE = 'HoverImage';
+
+    public const IMAGE_SET_SETIMAGE = 'SetImage';
 }
